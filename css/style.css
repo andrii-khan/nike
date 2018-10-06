@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+body{
+	background: url('../img/bg.jpg') no-repeat 50%;
+	background-size: cover;
+	font-family: Roboto, serif;
+	font-weight: 400;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 50px;
+	padding-right: 50px;
+	max-width: 850px;
+	margin-bottom: 100px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #000;
+	margin-bottom: 10px;
+	width: 118px;
+	height: 30px;
+	text-transform: uppercase;
+	font: 300 12px/1.2 Roboto;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background: #a200b8;
+	color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+p,h1,h2,h3,h4,h5,h6 {
+	padding: 0;
+	margin: 0;
+}
+.ba-header {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.ba-menu__item + .ba-menu__item {
+	margin-left: 45px;
+}
+.ba-menu__item a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.ba-menu__item a:hover {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fff;
+}
+.ba-menu {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 12.14px;
+	font-weight: 300;
+}
+.ba-burger {
+	display: block;
+	width: 25px;
+	height: 2px;
+	color: #fff;
+	background-color: #fff;
+	margin-bottom: 4px;
+	text-align: center;
+}
+.ba-menu__item--burger {
+	cursor: pointer;
+}
+.ba-menu__item + .ba-menu__item--burger {
+	margin-left: 65px;
+}
+.ba-header {
+	margin-bottom: 65px;
+}
+.ba-product {
+	display: flex;
+}
+.ba-product__images {
+	background: url(../img/bg-product.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 40px 40px 10px;
+	position: relative;
+}
+.ba-product__images img {
+	margin-top: -100px;
+}
+.ba-product__images--title {
+	text-transform: uppercase;
+	font-size: 80px;
+	color: #fff;
+	letter-spacing: 5px;
+	margin-top: 30px;
+}
+.ba-product__add span {
+	width: 20px;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	bottom: 80px;
+	right: 30px;
+}
+.ba-product__add span:last-child {
+	transform: rotate(90deg);
+}
+.ba-product__slid {
+	margin-top: 40px;
+}
+.ba-product__about {
+	background: #fff;
+	padding: 40px 18px;
+	position: relative;
+}
+.ba-product__status {
+	color: #fff;
+	background-color: #ffa60d;;
+	margin-bottom: 10px;
+	width: 42px;
+	height: 24px;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 4px;
+}
+.ba-product__title {
+	text-transform: uppercase;
+	font: 400 21px/1.2 Roboto;
+	margin-bottom: 20px;
+}
+.ba-product__title span {
+	color: #5e4fff;
+}
+.ba-product__rate {
+	font: 700 12px/1.2 Roboto;
+	margin-bottom: 18px;
+}
+.ba-product__price {
+	font: 300 22px/1.2 Roboto;
+	margin-bottom: 30px;
+}
+.ba-product__size {
+	margin-bottom: 40px;
+}
+.ba-product__size p {
+	padding-bottom: 15px;
+	font: 700 12px/1.2 Roboto;
+}
+.ba-product__size--cheked {
+	font: 400 16px/1.2 Roboto;
+	position: relative;
+}
+.ba-product__size--cheked + .ba-product__size--cheked {
+	margin-left: 20px;
+}
+.ba-product__size--cheked:hover::after{
+	content: '';
+	position: absolute;
+	border: 1px solid #000;
+	top: -4px;
+	bottom: -4px;
+	left: -4px;
+	right: -4px;
+}
+.ba-product__cancel span {
+	width: 25px;
+	height: 2px;
+	background-color: #d7d7d7;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+.ba-product__cancel span:last-child {
+	transform: rotate(-45deg);
+}
+
+
