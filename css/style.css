@@ -199,7 +199,7 @@ p,h1,h2,h3,h4,h5,h6 {
 .ba-product__size--cheked + .ba-product__size--cheked {
 	margin-left: 20px;
 }
-.ba-product__size--cheked:hover::after{
+/* .ba-product__size--cheked:hover::after{
 	content: '';
 	position: absolute;
 	border: 1px solid #000;
@@ -207,22 +207,29 @@ p,h1,h2,h3,h4,h5,h6 {
 	bottom: -4px;
 	left: -4px;
 	right: -4px;
-}
-.ba-product__cancel span {
+} */
+.ba-product__cancel {
 	width: 25px;
 	height: 2px;
-	background-color: #d7d7d7;
-	transform: rotate(45deg);
 	position: absolute;
 	top: 20px;
 	right: 10px;
+	opacity: 0.6;
 }
-.ba-product__cancel span:last-child {
+.ba-product__cancel::before, .ba-product__cancel::after{
+	content: ' ';
+	width: 25px;
+	height: 1px;
+	background-color: #000;
+	display: block;
+}
+.ba-product__cancel::after{
 	transform: rotate(-45deg);
 }
-
-
-/* .ba-product__size input {
+.ba-product__cancel::before{
+	transform: rotate(45deg);
+}
+.ba-product__size input {
 	visibility: hidden;
 	height: 0;
 	width: 0;
@@ -230,12 +237,14 @@ p,h1,h2,h3,h4,h5,h6 {
 label {
     user-select: none;
 }
-[type="checkbox"]:checked + span::after {
-	position: relative;
-	top: -5px;
-	left: -5px;
+[type="radio"] + span {
+	min-width: 25px;
+	display: inline-block;
+	text-align: center;
+}
+[type="radio"]:checked + span {
 	border: 1px solid #000;
 }
-.ba-product__size label + label {
-	margin-left: 5px;
-} */
+.ba-button-mar {
+	margin-top: 30px;
+}

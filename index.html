@@ -18,26 +18,25 @@
 <body>
 
 	<div class="ba-container">
+		<header class="ba-header">
+			<a href="#" class="ba-logo"><img src="img/logo.png" alt="logo"></a>
+			<nav>
+				<ul class="ba-menu">
+					<li class="ba-menu__item"><a href="#">lifestyle</a></li>
+					<li class="ba-menu__item"><a href="#">running</a></li>
+					<li class="ba-menu__item"><a href="#">football</a></li>
+					<li class="ba-menu__item"><a href="#">skateboarding</a></li>
+					<li class="ba-menu__item ba-menu__item--burger">
+						<span class="ba-burger"></span>
+						<span class="ba-burger"></span>
+						<span class="ba-burger"></span>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		<main>
-			<header class="ba-header">
-				<a href="#" class="ba-logo"><img src="img/logo.png" alt="logo"></a>
-				<nav>
-					<ul class="ba-menu">
-						<li class="ba-menu__item"><a href="#">lifestyle</a></li>
-						<li class="ba-menu__item"><a href="#">running</a></li>
-						<li class="ba-menu__item"><a href="#">football</a></li>
-						<li class="ba-menu__item"><a href="#">skateboarding</a></li>
-						<li class="ba-menu__item ba-menu__item--burger">
-							<span class="ba-burger"></span>
-							<span class="ba-burger"></span>
-							<span class="ba-burger"></span>
-						</li>
-					</ul>
-				</nav>
-			</header>
-
-			<section class="ba-product">
-				<div class="ba-product__images">
+			<article class="ba-product">
+				<section class="ba-product__images">
 					<h1 class="ba-product__images--title">Huarache</h1>
 					<img src="img/new-nike.png" alt="Nike">
 					<div class="ba-product__add">
@@ -51,8 +50,8 @@
 						<a href="#"><img src="img/small2.png" alt="nike"></a>
 						<a href="#"><img src="img/small3.png" alt="nike"></a>
 					</div>
-				</div>
-				<div class="ba-product__about">
+				</section>
+				<section class="ba-product__about">
 					<div class="ba-product__status">New</div>
 					<div class="ba-product__title">
 						<p>The <span>running</span> has just begun</p>
@@ -61,48 +60,40 @@
 						<span>Huarache</span>
 						<img src="img/star.png" alt="rating">
 					</div>
-					<div class="ba-product__price">$200</div>
-					<div class="ba-product__size">
+					<div class="ba-product__price">$ 200</div>
+					<form action="#" class="ba-product__size">
 						<p>Size</p>
-						<span class="ba-product__size ba-product__size--cheked">7</span>
-						<span class="ba-product__size ba-product__size--cheked">8</span>
-						<span class="ba-product__size ba-product__size--cheked">9</span>
-						<span class="ba-product__size ba-product__size--cheked">10</span>
-						<span class="ba-product__size ba-product__size--cheked">11</span>
-					</div>
-					<!-- <p>Size</p>
-					<div class="ba-product__size" for="">
-						<label for="chek-size-1">
-							<input id="chek-size-1" type="checkbox">
+						<label>
+							<input name="size" type="radio">
 							<span>7</span>
 						</label>
-						<label for="chek-size-2">
-							<input id="chek-size-2" type="checkbox">
+						<label>
+							<input name="size" type="radio">
 							<span>8</span>
 						</label>
-						<label for="chek-size-3">
-							<input id="chek-size-3" type="checkbox">
+						<label>
+							<input name="size" type="radio">
 							<span>9</span>
 						</label>
-						<label for="chek-size-4">
-							<input id="chek-size-4" type="checkbox">
+						<label>
+							<input name="size" type="radio">
 							<span>10</span>
 						</label>
-						<label for="chek-size-5">
-							<input id="chek-size-5" type="checkbox">
+						<label>
+							<input name="size" type="radio">
 							<span>11</span>
 						</label>
-					</div> -->
-					<button class="ba-button">Add to cart</button>
-					<button class="ba-button">Wishlist</button>
+						<button class="ba-button ba-button-mar">Add to cart</button>
+						<button class="ba-button">Wishlist</button>
+					</form>
 					<div class="ba-product__cancel">
-						<a href="#">
+						<!-- <a href="#">
 							<span></span>
 							<span></span>
-						</a>
+						</a> -->
 					</div>
-				</div>
-			</section>
+				</section>
+			</article>
 		</main>
 	</div>
 </body>
